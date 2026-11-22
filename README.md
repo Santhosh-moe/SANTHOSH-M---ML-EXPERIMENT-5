@@ -34,11 +34,10 @@ Lloyd’s algorithm: assign to nearest centroid → recompute centroids until co
 KMeans minimizes within-cluster variance; relates to vector quantization. 
 
 
-```
 
 
 ## INPUT
-
+```
 # Experiment 5
 import numpy as np
 import matplotlib.pyplot as plt
@@ -52,11 +51,11 @@ centers = kmeans.cluster_centers_
 plt.scatter(x[:,0], x[:,1], c=labels, cmap='viridis');
 plt.scatter(centers[:,0],centers[:,1], marker='x', color='red', s=100); plt.title('KMeans Clusters');plt.show()
 print('Inerita (WCSS):', round(kmeans.inertia_,3))
-
+```
 
 
 ## OUTPUT:
-```
+
 <img width="546" height="435" alt="image" src="https://github.com/user-attachments/assets/70985b57-3018-4ced-b5e8-14b6e75835de" />
 Inerita (WCSS): 170.203
 
